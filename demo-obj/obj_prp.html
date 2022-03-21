@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>
+            javascript object properties 
+        </title>
+    </head>
+    <body>
+        <h1>
+            obj properties
+        </h1>
+        <p id = "demo"></p>
+        <button id = "click me">click here charan</button>
+    </body>
+    <script>
+        let user = {
+            name:" yaswanth",
+            age: 20,
+            branch: "cse",
+        };
+        function sayHi(){
+            alert("hello you are fucked up");
+        }
+        user.message = sayHi;
+        document.getElementById("demo").innerHTML = "hhaha" + user.name;
+        document.getElementById("click me").onclick = user.message;
+    </script>
+    <script>
+        var student = {
+            name: "charan",
+            age: 20,
+            branch: "cse",
+            job_pkg: "10lpa",
+        };
+        student.age = 50 
+        document.getElementById("demo").innerHTML = student.name + " is of age" + student.age + " of branch  " + student.branch + " got placed in accenture with the package of" + student.job_pkg;
+        
+    </script>
+</html>
